@@ -2,3 +2,8 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 @plugin 'daisyui';
+
+:root {
+	--p: 24 94% 52%;
+	--pc: 0 0% 100%;
+}
