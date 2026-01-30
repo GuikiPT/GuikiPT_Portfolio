@@ -272,7 +272,6 @@
 
 	.hero-name-alt {
 		font-weight: 600;
-		font-size: 0.95rem;
 		color: #fb923c;
 		text-shadow:
 			0 0 8px rgba(249, 115, 22, 0.5),
@@ -283,7 +282,6 @@
 
 	.portugal-flag {
 		font-weight: 600;
-		font-size: 0.95rem;
 		background: linear-gradient(90deg, #006600 0%, #006600 40%, #ff0000 60%, #ff0000 100%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
