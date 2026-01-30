@@ -1,3 +1,6 @@
+# Custom
+.vscode/mcp.json
+
 node_modules
 
 # Output
