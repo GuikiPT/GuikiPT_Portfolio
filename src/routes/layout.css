@@ -7,3 +7,48 @@
 	--p: 24 94% 52%;
 	--pc: 0 0% 100%;
 }
+
+html {
+	scroll-behavior: smooth;
+	overflow: hidden;
+	height: 100vh;
+	background-color: black;
+}
+
+body {
+	overflow: hidden;
+	height: 100vh;
+	background-color: black;
+}
+
+main {
+	overflow-y: scroll;
+	height: 100vh;
+	background-color: black;
+}
+
+main::-webkit-scrollbar {
+	display: none;
+}
+
+main {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+section, .hero {
+	min-height: 100vh;
+}
+
+/* Only enable scroll snap on desktop */
+@media (min-width: 1024px) {
+	main {
+		scroll-snap-type: y mandatory;
+		scroll-behavior: smooth;
+	}
+	
+	section, .hero {
+		scroll-snap-align: start;
+		scroll-snap-stop: always;
+	}
+}

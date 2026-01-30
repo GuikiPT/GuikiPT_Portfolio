@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { spring } from 'svelte/motion';
+	import { onMount } from 'svelte';
 
 	let coords1 = spring(
 		{ x: 0, y: 0 },
@@ -55,7 +56,10 @@
 		}
 		requestAnimationFrame(animate);
 	}
-	animate();
+
+	onMount(() => {
+		animate();
+	});
 </script>
 
 <svelte:window
